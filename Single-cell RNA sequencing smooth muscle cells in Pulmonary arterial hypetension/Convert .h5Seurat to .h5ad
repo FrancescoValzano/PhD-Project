@@ -1,5 +1,6 @@
+
 #The main scaffold of the analysis was performed in R, however scvelo is developed in python so we transition the seurat object into a .h5ad object
-srna_object = readRDS("YourDirectory/scrna_object.rds")
+scrna_object = readRDS("YourDirectory/scrna_object.rds")
 #This will create a .h5seurat file in your directory
 SaveH5Seurat(scrna_object, filename = "scrna_object.h5Seurat")
 #This will convert the .h5seurat file in a .h5ad file
