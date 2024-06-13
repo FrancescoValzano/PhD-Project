@@ -1,4 +1,7 @@
-
+if(!require(Seurat)){
+    remotes::install_version("Seurat", "4.0.3")
+    library(Seurat)
+}
 #The main scaffold of the analysis was performed in R, however scvelo is developed in python so we transition the seurat object into a .h5ad object
 scrna_object = readRDS("YourDirectory/scrna_object.rds")
 #This will create a .h5seurat file in your directory
