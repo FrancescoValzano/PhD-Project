@@ -8,3 +8,4 @@ scrna_object = readRDS("YourDirectory/scrna_object.rds")
 SaveH5Seurat(scrna_object, filename = "scrna_object.h5Seurat")
 #This will convert the .h5seurat file in a .h5ad file
 Convert("scrna_object.h5Seurat", dest = "h5ad")
+#input for scvelo pipeline
